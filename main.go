@@ -41,7 +41,7 @@ func (p Proxy) mDNSLookup(w dns.ResponseWriter, r *dns.Msg, name string) {
 
 	// Start listening for response packets
 	msgCh := make(chan *dns.Msg, 32)
-	defer close(msgCh)
+	//defer close(msgCh)
 
 	go client.Recv(client.Ipv4UnicastConn, msgCh)
 	go client.Recv(client.Ipv6UnicastConn, msgCh)

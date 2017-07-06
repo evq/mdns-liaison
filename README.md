@@ -16,3 +16,5 @@ Add `nameserver 172.17.0.1` to your docker host `/etc/resolv.conf`, Docker
 should add this entry into container `/etc/resolv.conf` files automatically.
 
 NOTE: By default this listens on all interfaces.
+
+There is a known panic on a closed channel.

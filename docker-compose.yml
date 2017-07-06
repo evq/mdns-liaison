@@ -1,0 +1,8 @@
+version: "2"
+services:
+  mdns-translator:
+    container_name: mdns-translator
+    image: mdns-translator
+    build: .
+    network_mode: host
+    restart: always
